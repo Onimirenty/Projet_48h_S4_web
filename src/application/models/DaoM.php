@@ -56,5 +56,18 @@ class DaoM extends CI_Model
         $result =$this->db->query($query);
         return $result;
     }
+    public function updateRows($tableName, $column, $value, $condition) {
+        $query = "UPDATE {$tableName} SET {$column} = '{$value}' WHERE {$condition}";
+        $result = $this->db->query($query);
+        return $result;
+    }
+    public function showTabContentAsError($tab)
+    {
+        ob_start(); // Début de la capture de sortie
+        var_dump($tab); // Affiche les détails de la variable
+        $output = ob_get_clean(); // Fin de la capture de sortie
+        show_error($output);
+    } 
+    
 }
 ?>

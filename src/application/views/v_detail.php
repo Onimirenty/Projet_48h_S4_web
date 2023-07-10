@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-
+        
         <title>Sign Up</title>
-
+        
         <link rel="stylesheet" id="css-main" href="<?php echo base_url().'asset/css/codebase.min.css'?>">
-
+    
     </head>
     <body>
         <!-- Page Container -->

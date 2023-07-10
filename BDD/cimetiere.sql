@@ -1,0 +1,1 @@
+  idPersonne,idWallet,ancienSolde ,nouveauSolde ,dateModification
