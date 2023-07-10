@@ -22,7 +22,8 @@ class Welcome extends CI_Controller {
 		$this->load->view('v_login');
 	}
 
-	public function home(){
+	public function home($id){
+		$data['personne'] = $this->Personne->selection2($id);
 		$data['content'] = 'front_office/home';
 		$this->load->view('front_office/template', $data);
 	}	

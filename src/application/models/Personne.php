@@ -21,7 +21,7 @@ class Personne extends CI_Model {
 
     public function selection2($id){
         $r = $this->db->query("select * from personne where id = '$id'");
-        return $r->result();    
+        return $r->row_array();
     }
 
     public function dernier(){

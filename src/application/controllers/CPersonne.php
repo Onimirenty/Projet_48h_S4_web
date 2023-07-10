@@ -19,7 +19,19 @@ class CPersonne extends CI_Controller {
 		
 		$idPers = $this->Personne->dernier();
 		$this->Login->insertion($idPers, $email, $mdp);
+		
+		$this->load->view('v_detail');		
+	}
 
+	public function insertionDetails(){
+		$idPers = $this->Personne->dernier();
+		$taille = $this->input->post('taille');
+		$poids = $this->input->post('poids');
+		$objectif = $this->input->post('objectif');
+
+		$this->Details->insertion($idPers, $taille, $poids);
+		$this->Objectifs->insertion($objectif);
+		
 		redirect('CLogin');
 	}
 

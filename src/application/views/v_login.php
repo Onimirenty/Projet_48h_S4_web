@@ -30,7 +30,7 @@
                         <div class="hero-static col-md-6 col-xl-8 d-none d-md-flex align-items-md-end">
                             <div class="p-30 invisible" data-toggle="appear">
                                 <p class="font-size-h3 font-w600 text-white">
-                                    Welcome to SWITCH
+                                    Welcome to NUTRIPLAN
                                 </p>
                                 <p class="font-italic text-white-op">
                                     Copyright &copy; <span class="js-year-copy"><?php echo date('Y');?></span>
@@ -42,8 +42,7 @@
                                 <!-- Header -->
                                 <div class="px-30 py-10">
                                     <a class="link-effect font-w700" href="<?php echo base_url();?>">
-                                        <i class=""></i>
-                                        <span class="font-size-xl" style="color:  #d1c286;">SWITCH</span>
+                                        <span class="font-size-xl" style="color:  #d1c286;">NUTRIPLAN</span>
                                     </a> 
                                     <h1 class="h3 font-w700 mt-30 mb-10">Sign In to Your Account</h1>
                                     <h2 class="h5 font-w400 text-muted mb-0">Please sign in</h2>

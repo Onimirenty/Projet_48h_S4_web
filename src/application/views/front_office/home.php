@@ -12,11 +12,15 @@
 							<div class="slider-text-inner">
 								<div class="desc">
 									<span class="price">Welcome</span>
-									<h2>Our Home Page</h2>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and
-										Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.
+									<h2>Your profil </h2>
+									<p>Nom :
+										<?php echo $personne['nom']; ?>
 									</p>
-									<p><a href="single.html" class="btn btn-primary btn-outline btn-lg">Visit Page</a>
+									<p>Prenom :
+										<?php echo $personne['prenom']; ?>
+									</p>
+									<p>Date de naissance :
+										<?php echo $personne['dtn']; ?>
 									</p>
 								</div>
 							</div>

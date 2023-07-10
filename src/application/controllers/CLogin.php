@@ -8,7 +8,7 @@ class CLogin extends CI_Controller {
 
 	public function verification(){
 		$email = $this->input->post('email');
-        $mdp = /*md5(*/$this->input->post('mdp')/*)*/;
+        $mdp = $this->input->post('mdp');
 
         $log = $this->Login->selection();
         $admin = $this->Admin->selection();
@@ -16,13 +16,13 @@ class CLogin extends CI_Controller {
         foreach($admin as $a) {
         	if($email == $a->email && $mdp == $a->mdp){
         		$this->session->set_userdata('user', $a->id);         
-	            redirect(base_url('/welcome/admin'));
+	            redirect(base_url('/Welcome/admin'));
         	}
         }
         foreach($log as $l) {
         	if($email == $l->email && $mdp == $l->mdp){
 	            $this->session->set_userdata('user', $l->idPersonne);         
-	            redirect(base_url('/Welcome/home'));
+	            redirect(base_url('/Welcome/home/' . $l->idPersonne));
 	        }	        
         }
 		redirect(base_url('/CLogin'));
