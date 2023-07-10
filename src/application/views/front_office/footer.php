@@ -1,10 +1,10 @@
 
-	<footer id="fh5co-footer" role="contentinfo">
+	<footer id="fh5co-footer" role="contentinfo" style="background-color: #BAD68F">
 		<div class="row copyright">
 			<div class="col-md-12 text-center">
 				<p>
 					<span class="" >&copy; 2023 Free HTML5. All Rights Reserved.</span> 
-					<span class="">Designed by <a href="http://freehtml5.co/" target="_blank">ituTeam</a></span>
+					<span class="">Designed by ituTeam</span>
 				</p>
 			</div>
 		</div>

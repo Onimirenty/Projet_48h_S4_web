@@ -23,7 +23,15 @@ class Welcome extends CI_Controller {
 	}
 
 	public function home($id){
+		$personne = $this->Personne->selection2($id);
 		$data['personne'] = $this->Personne->selection2($id);
+		if($personne['sexe']==0){
+			$sexe = "Homme";
+		}else{
+			$sexe = "Femme";
+		}
+		$data['sexe'] = $sexe;
+		$data['details'] = $this->Details->selection2($id);
 		$data['content'] = 'front_office/home';
 		$this->load->view('front_office/template', $data);
 	}	

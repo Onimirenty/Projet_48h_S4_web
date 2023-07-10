@@ -19,8 +19,8 @@ class Details extends CI_Model {
     }
 
     public function selection2($id){
-        $r = $this->db->query("select * from details where id = '$id'");
-        return $r->result();    
+        $r = $this->db->query("select * from details where idPersonne = '$id'");
+        return $r->row_array();    
     }
 
 //-------------------------------------------------------------------------

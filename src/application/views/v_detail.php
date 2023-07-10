@@ -16,7 +16,7 @@
             <!-- Main Container -->
             <main id="main-container">
                 <!-- Page Content -->
-                <div class="bg-image" style="background-image: url('asset/img/bg-login6.jpg');">
+                <div class="bg-image" style="background-image: url('asset/img/sp.jpg');">
                     <div class="row mx-0 bg-black-op">
                         <div class="hero-static col-md-6 col-xl-8 d-none d-md-flex align-items-md-end">
                             <div class="p-30 invisible" data-toggle="appear">
@@ -70,7 +70,7 @@
                                     </div>
                                     <br>
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-sm btn-hero btn-alt-primary">
+                                        <button type="submit" class="btn btn-sm btn-hero btn-alt-primary" style="background-color: #15CE21; color: white">
                                             <i class="si si-login mr-10"></i> Sign Up
                                         </button>
                                         

@@ -35,11 +35,9 @@ class CPersonne extends CI_Controller {
 		redirect('CLogin');
 	}
 
-	public function userList() {
-		$data['userList'] = $this->Personne->selection();
-
-		$data['content'] = 'back_office/listUser';
+	public function list(){
+    	$data['list'] = $this->Personne->selection();
+	    $data['content'] = 'back_office/listUser';
 		$this->load->view('back_office/template', $data);
-	}
-
+    }
 }
