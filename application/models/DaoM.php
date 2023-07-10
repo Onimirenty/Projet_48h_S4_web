@@ -1,5 +1,5 @@
 <?php
-class DaoModel extends CI_Model
+class DaoM extends CI_Model
 {
     
     /*
