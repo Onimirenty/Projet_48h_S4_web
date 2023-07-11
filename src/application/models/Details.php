@@ -3,9 +3,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Details extends CI_Model {
 
-    public function insertion($idPersonne, $taille, $poids){
+    public function insertion($idPersonne, $idObjectif, $taille, $poids){
         $data=array(
             'idPersonne' => $idPersonne,
+            'idObjectif' => $idObjectif,
             'taille' => $taille,
             'poids' => $poids
         ); 
@@ -19,8 +20,8 @@ class Details extends CI_Model {
     }
 
     public function selection2($id){
-        $r = $this->db->query("select * from details where id = '$id'");
-        return $r->result();    
+        $r = $this->db->query("select * from details where idPersonne = '$id'");
+        return $r->row_array();    
     }
 
 //-------------------------------------------------------------------------

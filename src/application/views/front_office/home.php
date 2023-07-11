@@ -1,27 +1,37 @@
 <div class="fh5co-loader"></div>
 <div id="page">
-	
 	<aside id="fh5co-hero" class="js-fullheight">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-				<li style="background-image: url(<?php echo base_url(); ?>/assets/images/banner-img/banner-02.jpg);">
+				<li style="background-image: url(<?php echo base_url(); ?>/asset/img/burger.jpg);">
 					<div class="overlay-gradient"></div>
 					<div class="container">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
 							<div class="slider-text-inner">
 								<div class="desc">
 									<span class="price">Welcome</span>
-									<h2>Your profil </h2>
-									<p>Nom :
+									<h2>Votre profil </h2>
+									<p style="font-size: 20px">Nom :
 										<?php echo $personne['nom']; ?>
 									</p>
-									<p>Prenom :
+									<p style="font-size: 20px">Prenom :
 										<?php echo $personne['prenom']; ?>
 									</p>
-									<p>Date de naissance :
+									<p style="font-size: 20px">Date de naissance :
 										<?php echo $personne['dtn']; ?>
 									</p>
-									<p><a href="<?php echo base_url('CRecharge/recharger'); ?>/<?php echo $id; ?>" class="btn btn-primary btn-outline">Recharger mon compte</a></p>
+									<p style="font-size: 20px">Sexe :
+										<?php echo $sexe; ?>
+									</p>
+									<p style="font-size: 20px">Taille :
+										<?php echo $details['taille']; ?> cm
+									</p>
+									<p style="font-size: 20px">Poids :
+										<?php echo $details['poids']; ?> kg
+									</p>
+									<p style="font-size: 20px"><a
+											href="<?php echo base_url('CRecharge/recharger'); ?>/<?php echo $id; ?>"></a>Recharger
+										mon compte</p>
 								</div>
 							</div>
 						</div>
@@ -42,18 +52,6 @@
 						<h3>Credit Card</h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
 							there live the blind texts. Separated they live in Bookmarksgrove</p>
-						<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4 text-center">
-					<div class="feature-center animate-box" data-animate-effect="fadeIn">
-						<span class="icon">
-							<i class="fa fa-sync"></i>
-						</span>
-						<h3>Switch item</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-							there live the blind texts. Separated they live in Bookmarksgrove</p>
-						<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4 text-center">
@@ -64,7 +62,6 @@
 						<h3>Free Delivery</h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
 							there live the blind texts. Separated they live in Bookmarksgrove</p>
-						<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
 					</div>
 				</div>
 			</div>

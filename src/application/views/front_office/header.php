@@ -14,7 +14,8 @@
 	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=P
 	layfair+Display:400,400i" rel="stylesheet"> -->
-    <script src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
+	<script src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="<?php echo base_url('asset/css/animate.css'); ?>">
 	<!-- Icomoon Icon Fonts-->
@@ -28,16 +29,14 @@
 	<!-- FontAwesome-5  -->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url() . 'asset/css/all.css'; ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url() . 'asset/css/all.min.css'; ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url() . 'asset/css/fontawesome.min.css'; ?>">
 	<link rel="stylesheet" id="css-main" href="<?php echo base_url() . 'asset/css/codebase.min.css' ?>">
-	
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="<?php echo base_url('asset/css/style.css'); ?>">
-
 	<!-- Modernizr JS -->
-	
 	<style>
 		.nav-bar {
-			background-color: #d1c286;
+			background-color: #BAD68F;
 		}
 	</style>
 
@@ -51,13 +50,12 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3 col-xs-2">
-						<div id="fh5co-logo"><a href="index.php">Switch.</a></div>
+						<div id="fh5co-logo"><a href="index.php">NutriPlan</a></div>
 					</div>
 					<div class="col-md-6 col-xs-6 text-center menu-1">
 						<ul>
 							<li><a href="<?php echo base_url('Welcome/home'); ?>" class="white">Home</a></li>
-							<li><a href="<?php echo base_url('CRecharge/recharger'); ?>" class="white">Recharger mon Compte</a></li>
-							
+							<li><a href="<?php echo base_url('CSuggestion/home'); ?>" class="white">Suggestions</a></li>
 							<li class="has-dropdown">
 								<a href="services.html">Setting</a>
 								<ul class="dropdown nav-menu">
