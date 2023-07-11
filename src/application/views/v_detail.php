@@ -16,7 +16,7 @@
             <!-- Main Container -->
             <main id="main-container">
                 <!-- Page Content -->
-                <div class="bg-image" style="background-image: url('asset/img/bg-login6.jpg');">
+                <div class="bg-image" style="background-image: url('asset/img/sp.jpg');">
                     <div class="row mx-0 bg-black-op">
                         <div class="hero-static col-md-6 col-xl-8 d-none d-md-flex align-items-md-end">
                             <div class="p-30 invisible" data-toggle="appear">
@@ -61,16 +61,16 @@
                                         <div class="col-12">
                                             <label>Objectifs</label>
                                             <div class="form-material floating">
-                                                <input type="radio" value="0" name="objectif" checked="checked"> 
+                                                <input type="radio" value="1" name="objectif" checked="checked"> 
                                                 <span style="padding-left: 5px;font-weight: normal;"> Augmenter son poids </span> 
-                                                <input type="radio" value="1" name="objectif" style="padding-left: 5px;"> 
+                                                <input type="radio" value="2" name="objectif" style="padding-left: 5px;"> 
                                                 <span style="padding-left: 5px;font-weight: normal;"> Reduire son poids </span>
                                             </div>
                                         </div>
                                     </div>
                                     <br>
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-sm btn-hero btn-alt-primary">
+                                        <button type="submit" class="btn btn-sm btn-hero btn-alt-primary" style="background-color: #15CE21; color: white">
                                             <i class="si si-login mr-10"></i> Sign Up
                                         </button>
                                         
