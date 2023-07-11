@@ -59,3 +59,4 @@ class Recharge extends CI_Model {
         return $recharge[0];
     }
 }
+?>

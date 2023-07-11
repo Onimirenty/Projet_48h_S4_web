@@ -8,7 +8,7 @@ class CRecharge extends CI_Controller {
 		$this->load->view('front_office/template', $data);
 	}
 
-	public function debiter_utilisateur{
+	public function debiter_utilisateur(){
 		$id = $_SESSION["userId"];
 		$code = $this->input->post('code_recharge');
 		$exist = $this->Recharge->does_recharge_exist($code);
@@ -27,3 +27,4 @@ class CRecharge extends CI_Controller {
 		$this->load->view('front_office/template', $data);
 	}
 }
+?>

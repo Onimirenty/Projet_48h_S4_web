@@ -21,7 +21,7 @@ class Welcome extends CI_Controller {
 	public function index(){
 		$this->load->view('v_login');
 	}
- 
+
 	public function home(){
 		$id = $_SESSION["userId"];
 		$personne = $this->Personne->selection2($id);
