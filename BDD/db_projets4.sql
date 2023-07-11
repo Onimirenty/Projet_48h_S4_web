@@ -140,6 +140,7 @@ CREATE TABLE recharge (
 );
 
 ----on a 13 tables
+
 CREATE TABLE nombre_essaie_recharge (
   id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
   idPersonne INT NOT NULL,
@@ -148,4 +149,12 @@ CREATE TABLE nombre_essaie_recharge (
   FOREIGN KEY (idPersonne) REFERENCES personne(id)  ON DELETE CASCADE,
   FOREIGN KEY (idRecharge) REFERENCES recharge(id)  ON DELETE CASCADE
 
+);
+
+CREATE TABLE paiement (
+  id int(5) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  idwallet int(5) NOT NULL,
+  idService int(5) NOT NULL,
+  FOREIGN KEY (idWallet) REFERENCES wallet(id)  ON DELETE CASCADE,
+  FOREIGN KEY (idService) REFERENCES service(id)
 );
