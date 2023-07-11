@@ -133,4 +133,4 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array('DaoM','Personne', 'Login', 'Admin', 'Details', 'Objectifs');
+$autoload['model'] = array('PlatRegime', 'RegimePlat', 'Services','DaoM','Personne', 'Login', 'Admin', 'Details', 'Objectifs','Suggestion','Regime','Plat','Sport','Recharge');

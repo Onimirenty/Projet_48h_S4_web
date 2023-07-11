@@ -22,8 +22,25 @@ class Welcome extends CI_Controller {
 		$this->load->view('v_login');
 	}
 
-	public function home($id){
+	public function home(){
+		$id = $_SESSION["userId"];
+		$personne = $this->Personne->selection2($id);
+		$_SESSION['personne'] = $this->Personne->selection2($id);
 		$data['personne'] = $this->Personne->selection2($id);
+		if($personne['sexe']==0){
+			$sexe = "Homme";
+		}else{
+			$sexe = "Femme";
+		}
+		$details = $this->Details->selection2($id);
+		$taille = $details['taille']/100;
+		$_SESSION['imc']=$details['poids'] / ($taille*$taille);
+		$data['imc'] = $details['poids'] / ($taille*$taille);
+		$_SESSION['sexe']=$data['sexe'] = $sexe;
+		$data['id'] = $id;
+		$data['details'] = $this->Details->selection2($id);
+		$_SESSION['details'] = $this->Details->selection2($id);
+		$data['wallet'] = $this->Recharge->getWalletByIdPersonne('wallet', $id)[0]; 
 		$data['content'] = 'front_office/home';
 		$this->load->view('front_office/template', $data);
 	}	

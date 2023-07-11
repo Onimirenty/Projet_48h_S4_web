@@ -21,15 +21,16 @@ class CLogin extends CI_Controller {
         }
         foreach($log as $l) {
         	if($email == $l->email && $mdp == $l->mdp){
-	            $this->session->set_userdata('user', $l->idPersonne);         
+	            $this->session->set_userdata('userId', $l->idPersonne);        
 	            redirect(base_url('/Welcome/home/' . $l->idPersonne));
 	        }	        
         }
+		
 		redirect(base_url('/CLogin'));
 	}
 
 	public function exit(){
-		$this->session->unset_userdata('user');         
+		$this->session->unset_userdata('userId');         
 		redirect(base_url('/CLogin'));		
 	}
     

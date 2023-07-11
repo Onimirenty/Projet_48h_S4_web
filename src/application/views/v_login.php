@@ -10,10 +10,10 @@
 
         <style>
             .btn-log {
-                background-color: #d1c286a5;
+                background-color: #15CE21;
             }
             .btn-log:hover {
-                background-color: #d1c286;
+                background-color: #107E18;
             }
         </style>
 
@@ -25,7 +25,7 @@
             <!-- Main Container -->
             <main id="main-container">
                 <!-- Page Content -->
-                <div class="bg-image" style="background-image: url('asset/img/bg-login8.jpg');">
+                <div class="bg-image" style="background-image: url('asset/img/cc.jpg');">
                     <div class="row mx-0 bg-black-op">
                         <div class="hero-static col-md-6 col-xl-8 d-none d-md-flex align-items-md-end">
                             <div class="p-30 invisible" data-toggle="appear">
@@ -42,7 +42,7 @@
                                 <!-- Header -->
                                 <div class="px-30 py-10">
                                     <a class="link-effect font-w700" href="<?php echo base_url();?>">
-                                        <span class="font-size-xl" style="color:  #d1c286;">NUTRIPLAN</span>
+                                        <span class="font-size-xl" style="color:  #15CE21;">NUTRIPLAN</span>
                                     </a> 
                                     <h1 class="h3 font-w700 mt-30 mb-10">Sign In to Your Account</h1>
                                     <h2 class="h5 font-w400 text-muted mb-0">Please sign in</h2>

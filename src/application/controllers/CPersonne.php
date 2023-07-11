@@ -29,8 +29,7 @@ class CPersonne extends CI_Controller {
 		$poids = $this->input->post('poids');
 		$objectif = $this->input->post('objectif');
 
-		$this->Details->insertion($idPers, $taille, $poids);
-		$this->Objectifs->insertion($objectif);
+		$this->Details->insertion($idPers,$objectif, $taille, $poids);
 		
 		redirect('CLogin');
 	}
